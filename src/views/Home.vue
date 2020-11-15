@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home">
     <p>Home Page</p>
     <navbar></navbar>
   </div>
@@ -16,5 +16,5 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass">
 </style>

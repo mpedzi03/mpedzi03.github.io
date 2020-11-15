@@ -8,27 +8,32 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
+    meta: { backgroundImg: 'Home.jpg' }
   },
   {
     path: '/accomplishments',
     name: 'accomplishments',
-    component: () => import('../views/Accomplishments.vue')
+    component: () => import('../views/Accomplishments.vue'),
+    meta: { backgroundImg: 'Accomplishments.jpg' }
   },
   {
     path: '/Hobbies',
     name: 'Hobbies',
-    component: () => import('../views/Hobbies.vue')
+    component: () => import('../views/Hobbies.vue'),
+    meta: { backgroundImg: 'Hobbies.jpg' }
   },
   {
     path: '/Connect',
     name: 'Connect',
-    component: () => import('../views/Connect.vue')
+    component: () => import('../views/Connect.vue'),
+    meta: { backgroundImg: 'Connect.jpg' }
   },
   {
     path: '/Philosophies',
     name: 'Philosophies',
-    component: () => import('../views/Philosophies.vue')
+    component: () => import('../views/Philosophies.vue'),
+    meta: { backgroundImg: 'Philosophies.jpg' }
   },
   {
     path: '/about',

@@ -1,14 +1,16 @@
 <template>
-  <div id="app">
+  <!-- <div id="container" :style="{ backgroundImage: require(`@assets/bg/${$route.meta.backgroundImage}`) }"> -->
+  <div id="container" :style="{ backgroundColor: 'green' }">
     <router-view/>
   </div>
 </template>
 
-<style lang="sass">
-#app
-  font-family: 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  text-align: center
+<script>
+export default {
+  name: 'app'
+}
+</script>
 
+<style lang="sass">
 </style>
+
