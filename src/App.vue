@@ -37,7 +37,7 @@ export default {
 }
 
 body {
-  background-image: url('assets/backgroundImg.jpg');
+  background-image: url('assets/bg_home.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
