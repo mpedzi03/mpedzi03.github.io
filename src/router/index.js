@@ -14,7 +14,8 @@ const routes = [
   {
     path: '/accomplishments',
     name: 'accomplishments',
-    component: () => import('../views/Accomplishments.vue')
+    component: () => import('../views/Accomplishments.vue'),
+    meta: { backgroundImg: 'Accomplishments.jpg' }
   },
   {
     path: '/Hobbies',
