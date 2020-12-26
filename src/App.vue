@@ -1,18 +1,29 @@
 <template>
-  <div>
-    <!-- <the-header></the-header> -->
-    <router-view/>
+  <div class="container-fluid">
+    <div class="row">
+      <the-header/>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <router-view/>
+      </div>
+      <div class="col-4">
+        <the-navbar/>
+      </div>      
+    </div>
   </div>
 </template>
 
 <script>
-// import TheHeader from './components/shared/TheHeader.vue'
+import TheHeader from './components/shared/TheHeader.vue'
+import TheNavbar from './components/shared/TheNavbar.vue'
 
 export default {
   name: 'App',
-  // components: {
-  //   TheHeader
-  // },
+  components: {
+    TheHeader,
+    TheNavbar
+  },
   data: function () {
     return {
     }
@@ -48,8 +59,9 @@ body {
 .navbarcustom {
   height: 4rem;
   width: 50rem;
-  background-image: url('assets/NavbarAbstract.jpg');
-  background-size: cover;
+  background-color: black;
+  // background-image: url('assets/NavbarAbstract.jpg');
+  // background-size: cover;
   margin: auto;
   margin-top: 2em;
   // padding-top: 2em;

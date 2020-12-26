@@ -1,16 +1,17 @@
 <template>
   <header>
-    <the-navbar-custom></the-navbar-custom>
+    <picture>
+      <img src="../../assets/header_banner.jpg" alt="banner image!" width="100%" height="240">
+    </picture>
   </header>
 </template>
 
 <script>
-import TheNavbarCustom from './TheNavbarCustom.vue'
 
 export default {
-  name: 'TheHeader',
-  components: {
-    TheNavbarCustom
-  }
+  name: 'TheHeader'
 }
 </script>
+
+<style scoped>
+</style>
