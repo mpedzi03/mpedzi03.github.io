@@ -4,25 +4,35 @@
       <the-header/>
     </div>
     <div class="row">
-      <div class="col-8">
+      <div class="col-1" id="social-nav-div">
+        <the-social-nav/>
+      </div>
+      <div class="col-7" id="main-content-div">
         <router-view/>
       </div>
-      <div class="col-4">
-        <the-navbar/>
-      </div>      
+      <div class="col-1" id="main-nav-div">
+        <the-main-nav/>
+      </div>
+      <div class="col-3" id="profile-div">
+        <the-profile/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import TheHeader from './components/shared/TheHeader.vue'
-import TheNavbar from './components/shared/TheNavbar.vue'
+import TheSocialNav from './components/shared/TheSocialNav.vue'
+import TheMainNav from './components/shared/TheMainNav.vue'
+import TheProfile from './components/shared/TheProfile.vue'
 
 export default {
   name: 'App',
   components: {
     TheHeader,
-    TheNavbar
+    TheSocialNav,
+    TheMainNav,
+    TheProfile
   },
   data: function () {
     return {
@@ -56,25 +66,65 @@ body {
   background-color: #464646;
 }
 
-.navbarcustom {
-  height: 4rem;
-  width: 50rem;
-  background-color: black;
-  // background-image: url('assets/NavbarAbstract.jpg');
-  // background-size: cover;
-  margin: auto;
-  margin-top: 2em;
-  // padding-top: 2em;
+#social-nav-div, #main-content-div, #main-nav-div, #profile-div {
+  margin-top: 3em;
+}
+#social-nav-div {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+#main-content-div {
+  border-top: 2px solid black;
+}
+#main-nav-div {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+#profile-div {
+  border-top: 2px solid black;
+}
 
-  button {
-    border-radius: 8px;
-    background-color: #FCBA12;
-    width: 8.5em;
-    margin-left: .5em;
-    margin-right: .5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+.nav {
+  position: sticky;
+  top: 0;
+}
+#profile-div {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.nav-item {
+  // background-color: green;
+  border: 8px outset #f3f1f1;
+  // border-radius: 10px;
+  background: white;
+  margin-bottom: 30px;
+  font-size: 15px;
+  text-align: center;
+
+  .active {
+    // border-radius: 10px;
+    // background:#29293d;
+    background: #29293d;
+    border: 6px inset #f3f1f1;
+  }
+
+  :hover {
+    // border-radius: 10px;
+    background: #f4f1f1;
   }
 }
+
+.nav-link {
+  color: #29293d;
+  font-weight: bold;
+}
+
+.nav-link.disabled {
+  color: white !important;
+}
+
 </style>
 

@@ -32,4 +32,25 @@ button
   border-radius: 8px
   background-color: #FCBA12
 
+
+.navbarcustom {
+  height: 4rem;
+  width: 50rem;
+  background-color: black;
+  // background-image: url('assets/NavbarAbstract.jpg');
+  // background-size: cover;
+  margin: auto;
+  margin-top: 2em;
+  // padding-top: 2em;
+
+  button {
+    border-radius: 8px;
+    background-color: #FCBA12;
+    width: 8.5em;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
 </style>
