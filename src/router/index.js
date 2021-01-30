@@ -12,10 +12,10 @@ const routes = [
     component: Home
   },
   {
-    path: '/accomplishments',
-    name: 'accomplishments',
-    component: () => import('../views/Accomplishments.vue'),
-    meta: { backgroundImg: 'Accomplishments.jpg' }
+    path: '/Deeds',
+    name: 'deeds',
+    component: () => import('../views/Deeds.vue'),
+    meta: { backgroundImg: 'Deeds.jpg' }
   },
   {
     path: '/Hobbies',
@@ -28,9 +28,9 @@ const routes = [
     component: () => import('../views/Connect.vue')
   },
   {
-    path: '/Philosophies',
-    name: 'philosophies',
-    component: () => import('../views/Philosophies.vue')
+    path: '/Ideals',
+    name: 'ideals',
+    component: () => import('../views/Ideals.vue')
   }
 ]
 

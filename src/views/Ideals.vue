@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid" id="philosophies">
+  <div class="container-fluid" id="ideals">
     <section>
-      <p>Philosophies Page</p>
+      <p>Ideals Page</p>
     </section>
   </div>
 </template>

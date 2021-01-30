@@ -3,18 +3,18 @@
     <div class="row">
       <the-header/>
     </div>
-    <div class="row">
+    <div class="row ">
       <div class="col-1" id="social-nav-div">
         <the-social-nav/>
       </div>
-      <div class="col-7" id="main-content-div">
-        <router-view/>
+      <div class="col-3" id="profile-div">
+        <the-profile/>
       </div>
       <div class="col-1" id="main-nav-div">
         <the-main-nav/>
       </div>
-      <div class="col-3" id="profile-div">
-        <the-profile/>
+      <div class="col-7" id="main-content-div">
+        <router-view/>
       </div>
     </div>
   </div>
@@ -85,10 +85,11 @@ body {
   border-top: 2px solid black;
 }
 
-.nav {
-  position: sticky;
-  top: 0;
-}
+// .nav {
+//   position: sticky;
+//   top: 0;
+// }
+
 #profile-div {
   display: flex;
   justify-content: center;
@@ -124,6 +125,12 @@ body {
 
 .nav-link.disabled {
   color: white !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-button-text {
+    display: none;
+  }
 }
 
 </style>

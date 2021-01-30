@@ -3,27 +3,27 @@
 		<b-nav-item :active="routeCheck('home')"
 								:disabled="routeCheck('home')"
 								to="home">
-			<b-icon icon="house"/><br>Home
+			<b-icon icon="house"/><br><span class="nav-button-text">Home</span>
 		</b-nav-item>
-		<b-nav-item :active="routeCheck('accomplishments')"
-								:disabled="routeCheck('accomplishments')"
-								to="accomplishments">
-			<b-icon icon="trophy"/><br>Accomplishments
+		<b-nav-item :active="routeCheck('deeds')"
+								:disabled="routeCheck('deeds')"
+								to="deeds">
+			<b-icon icon="trophy"/><br><span class="nav-button-text">Deeds</span>
 		</b-nav-item>
 		<b-nav-item :active="routeCheck('hobbies')"
 								:disabled="routeCheck('hobbies')"
 								to="hobbies">
-			<b-icon icon="bicycle"/><br>Hobbies
+			<b-icon icon="bicycle"/><br><span class="nav-button-text">Hobbies</span>
+		</b-nav-item>
+		<b-nav-item :active="routeCheck('ideals')"
+								:disabled="routeCheck('ideals')"
+								to="ideals">
+			<b-icon icon="book"/><br><span class="nav-button-text">Ideals</span>
 		</b-nav-item>
 		<b-nav-item :active="routeCheck('connect')"
 								:disabled="routeCheck('connect')"
 								to="connect">
-			<b-icon icon="outlet"/><br>Connect
-		</b-nav-item>
-		<b-nav-item :active="routeCheck('philosophies')"
-								:disabled="routeCheck('philosophies')"
-								to="philosophies">
-			<b-icon icon="book"/><br>Philosophies
+			<b-icon icon="outlet"/><br><span class="nav-button-text">Connect</span>
 		</b-nav-item>
 	</b-nav>
 </template>

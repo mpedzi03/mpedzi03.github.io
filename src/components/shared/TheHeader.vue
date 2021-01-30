@@ -1,7 +1,12 @@
 <template>
   <header>
+    <div class="d-block d-sm-none">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quos quibusdam harum expedita nihil incidunt delectus provident quas vitae a.</p>
+    </div>
+
     <picture>
-      <img src="../../assets/header_banner.jpg" alt="banner image!" width="100%" height="240">
+      <source srcset="../../assets/bg_hobbies.jpg" media="(max-width: 575px)">
+      <img src="../../assets/header_banner.jpg" alt="banner image!" width="100%">
     </picture>
   </header>
 </template>
