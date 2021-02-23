@@ -1,34 +1,35 @@
 <template>
-  <div id="home">
-      <the-header/>
-      <!-- <div id="social-nav-div">
-        <the-social-nav/>
-      </div> -->
-      <div id="profile-div">
-        <the-profile/>
-      </div>
-      <!-- <div id="main-nav-div">
-        <the-main-nav/>
-      </div> -->
-      <!-- <div id="main-content-div">
-        <router-view/>
-      </div> -->
+  <div id="main" class="container-fluid px-0">
+    <the-navbar/>
+    <the-banner/>
+
+    <div id="active-section"></div>
+
+    <my-life class="content-block" />
+    <my-work class="content-block" />
+    <my-philosophies class="content-block" />
+
+    <the-footer/>
   </div>
 </template>
 
 <script>
-import TheHeader from './components/shared/TheHeader.vue'
-// import TheSocialNav from './components/shared/TheSocialNav.vue'
-// import TheMainNav from './components/shared/TheMainNav.vue'
-import TheProfile from './components/shared/TheProfile.vue'
+import TheNavbar from '@/components/shared/TheNavbar.vue'
+import TheBanner from '@/components/shared/TheBanner.vue'
+import MyLife from '@/views/MyLife.vue'
+import MyWork from '@/views/MyWork.vue'
+import MyPhilosophies from '@/views/MyPhilosophies.vue'
+import TheFooter from '@/components/shared/TheFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    TheHeader,
-    // TheSocialNav,
-    // TheMainNav,
-    TheProfile
+    TheBanner,
+    TheNavbar,
+    MyLife,
+    MyWork,
+    MyPhilosophies,
+    TheFooter
   },
   data: function () {
     return {
@@ -45,17 +46,43 @@ export default {
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
+<style lang="sass">
+#app
+  font-family: 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
 
-#home {
-  display: grid
-}
+.content-block
+    display: flex
+    align-items: center
+    justify-content: center
 
+#active-section
+  > div
+    animation-name: slidein
+    animation-duration: 1s
+
+.animate-section
+    animation-name: slideout
+    animation-duration: 1s
+    animation-fill-mode: forwards
+
+@keyframes slidein
+  from
+    margin-left: 100%
+    width: 300%
+
+  to
+    margin-left: 0%
+    width: 100%
+
+@keyframes slideout
+  from
+    margin-left: 0%
+    width: 100%
+
+  to
+    margin-left: 100%
+    width: 300%
 </style>
-

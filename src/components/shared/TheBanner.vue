@@ -5,8 +5,8 @@
     </div>
 
     <picture>
-      <source srcset="../../assets/bg_hobbies.jpg" media="(max-width: 575px)">
-      <img src="../../assets/header_banner.jpg" alt="banner image!" width="100%">
+      <source srcset="@/assets/bg_hobbies.jpg" media="(max-width: 575px)">
+      <img src="@/assets/bg/Connect2.jpg" alt="banner image!" width="100%">
     </picture>
   </header>
 </template>
@@ -18,5 +18,5 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="sass">
 </style>
