@@ -5,9 +5,9 @@
 
     <div id="active-section"></div>
 
-    <my-life class="content-block" />
-    <my-work class="content-block" />
-    <my-philosophies class="content-block" />
+    <my-life/>
+    <my-work/>
+    <my-philosophies/>
 
     <the-footer/>
   </div>

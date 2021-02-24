@@ -1,7 +1,10 @@
 <template>
   <div id="profile-section">
-    <img id="profile-image" src="../../assets/profile_picture_8.jpg" height="250">
-    <div>
+    <img
+      id="profile-image"
+      src="@/assets/profile_picture_9 - FullScreen.jpg"
+    >
+    <!-- <div>
       <b-button
         id="contact-button"
         v-b-toggle.collapse-1
@@ -21,11 +24,8 @@
             <b-list-group-item href="https://github.com/mpedzi03" target="_blank"> Github                               <b-icon icon="github"/></b-list-group-item>
           </b-list-group>
         </div>
-        <!-- <b-nav vertical>
-          <b-nav-item href=""><b-icon icon="paperclip"/><br>Resume</b-nav-item>
-        </b-nav> -->
       </b-collapse>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -43,7 +43,7 @@ export default {
 <style lang="sass">
 #profile-image
    border-radius: 5%
-   border: 5px solid black
+   border: 2px solid #575352
    alt: "Me"
    text-align: center
 
