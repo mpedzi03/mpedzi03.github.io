@@ -47,8 +47,8 @@ export default {
       const myLifeEl = document.getElementById('my-life')
       myLifeEl.classList.remove('animate-section')
 
-      const myWorkEl = document.getElementById('my-work')
-      myWorkEl.classList.remove('animate-section')
+      // const myWorkEl = document.getElementById('my-work')
+      // myWorkEl.classList.remove('animate-section')
 
       const myPhilosophiesEl = document.getElementById('my-philosophies')
       myPhilosophiesEl.classList.remove('animate-section')

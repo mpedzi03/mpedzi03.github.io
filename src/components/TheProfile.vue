@@ -2,7 +2,10 @@
   <div id="profile-section">
     <img
       id="profile-image"
-      src="@/assets/profile_picture_9 - FullScreen.jpg"
+      srcset="@/assets/profile_picture_small.jpg 700w,
+              @/assets/profile_picture_large.jpg 991w"
+      sizes="(max-width: 991px) 700px, 991px"
+      src="@/assets/profile_picture_large.jpg"
     >
     <!-- <div>
       <b-button
