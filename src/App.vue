@@ -53,6 +53,13 @@ export default {
   -moz-osx-font-smoothing: grayscale
   text-align: center
 
+body
+  background: url('./assets/bg/whitesimple.jpg') no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
 .content-block
     display: flex
     align-items: center
