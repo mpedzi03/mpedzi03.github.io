@@ -6,7 +6,7 @@
     <div id="active-section"></div>
 
     <my-life/>
-    <!-- <my-work/> -->
+    <my-work/>
     <my-philosophies/>
 
     <the-footer/>
@@ -17,7 +17,7 @@
 import TheNavbar from '@/components/shared/TheNavbar.vue'
 import TheBanner from '@/components/shared/TheBanner.vue'
 import MyLife from '@/views/MyLife.vue'
-// import MyWork from '@/views/MyWork.vue'
+import MyWork from '@/views/MyWork.vue'
 import MyPhilosophies from '@/views/MyPhilosophies.vue'
 import TheFooter from '@/components/shared/TheFooter.vue'
 
@@ -27,7 +27,7 @@ export default {
     TheBanner,
     TheNavbar,
     MyLife,
-    // MyWork,
+    MyWork,
     MyPhilosophies,
     TheFooter
   },

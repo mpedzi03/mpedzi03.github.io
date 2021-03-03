@@ -11,6 +11,6 @@ export default {
 <style lang="sass">
 #my-work
   height: 500px
-  background-color: blue
+  background-color: #8a7c7c
   color: white
 </style>
