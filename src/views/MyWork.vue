@@ -1,5 +1,17 @@
 <template>
-  <div id="my-work">My Work</div>
+  <div id="my-work">
+    <div class="row justify-content-center align-items-center no-gutters py-5">
+      <div class="col">
+        <p>Hello!</p>
+      </div>
+      <div class="col">
+        <p>Hello!</p>
+      </div>
+      <div class="col">
+        <p>Hello!</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -10,7 +22,10 @@ export default {
 
 <style lang="sass">
 #my-work
-  height: 500px
-  background-color: #8a7c7c
+  background-color: #6b5b95
   color: white
+
+#my-work > div
+  height: 100%
+  text-align: center
 </style>

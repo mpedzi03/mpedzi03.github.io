@@ -33,7 +33,7 @@ export default {
 
 <style lang="sass">
 #my-life
-  background-color: #cfc8c8
+  background-color: #b2ad7f
   color: black
 
 #my-life > div

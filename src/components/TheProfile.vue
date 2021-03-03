@@ -46,7 +46,7 @@ export default {
 <style lang="sass">
 #profile-image
    border-radius: 5%
-   border: 2px solid #575352
+   border: 2px solid black
    alt: "Me"
    text-align: center
 
