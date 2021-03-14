@@ -6,7 +6,7 @@
       controls
       indicators
       background="#82c1e0"
-      :interval="8000"
+      :interval="100000"
       :img-width="1024"
       :img-height="500"
       @sliding-start="onSlideStart"
