@@ -48,8 +48,6 @@ export default {
 
 <style lang="sass">
 #my-work
-  // background-color: #6b5b95
-  color: black
 
 #my-work > div
   height: 100%

@@ -1,6 +1,6 @@
-const workData = [
+export const skillData = [
   {
-    id: 1,
+    id: 0,
     name: 'javascript',
     description: 'Scripting language that allows you to implement complex features on web pages',
     experience: 4,
@@ -12,7 +12,7 @@ const workData = [
     ]
   },
   {
-    id: 2,
+    id: 1,
     name: 'coldfusion',
     description: 'Rapid web-application development scripting language and platform',
     experience: 3,
@@ -20,7 +20,7 @@ const workData = [
     notes: ['test sentence', 'test sentence again']
   },
   {
-    id: 3,
+    id: 2,
     name: 'python',
     description: 'Interpreted, object-oriented, high-level programming language with dynamic semantics',
     experience: 2,
@@ -28,7 +28,7 @@ const workData = [
     notes: ['Wrote article on Python Forensics for eForensics magazine']
   },
   {
-    id: 4,
+    id: 3,
     name: 'java',
     description: 'Class-based, object-oriented programming language',
     experience: 3.5,
@@ -36,11 +36,11 @@ const workData = [
     notes: ['Created an airport app that tracks airport details and locations']
   },
   {
-    id: 5,
+    id: 4,
     name: 'vue',
     description: 'Progressive JS framework for building awesome user interfaces',
     experience: 2,
-    imgURLParam: 'vuejs',
+    imgURLParam: 'vuejs2',
     notes: [
       'Experience building multiple SPAs using Vue 2 best practices',
       'Proficient with many plugins, including Vuex, Vue-Router, Axios, Vue-i18n',
@@ -48,7 +48,7 @@ const workData = [
     ]
   },
   {
-    id: 6,
+    id: 5,
     name: 'webpack',
     description: 'Static module bundler for modern Javascript applications',
     experience: 2,
@@ -58,6 +58,3 @@ const workData = [
     ]
   },
 ]
-
-
-export default workData

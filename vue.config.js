@@ -1,8 +1,10 @@
 module.exports = {
   css: {
     loaderOptions: {
-      scss: {
-        additionalData: '@import "@/styles/_variables.scss";'
+      sass: {
+        // Here we can specify the older indent syntax formatted SASS
+        // Note that there is *not* a semicolon at the end of the below line
+        additionalData: `@import "@/styles/_variables.sass"`
       }
     }
   },

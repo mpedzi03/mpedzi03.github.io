@@ -7,7 +7,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item href="#" @click="makeActiveSection('my-life')">About Me</b-nav-item>
-        <b-nav-item href="#" @click="makeActiveSection('my-work')">My Work</b-nav-item>
+        <b-nav-item href="#" @click="makeActiveSection('my-skills')">My Skills</b-nav-item>
         <b-nav-item href="#" @click="makeActiveSection('my-philosophies')">My Philosophies</b-nav-item>
         <!-- <b-nav-item href="#" @click="makeActiveSection('my-life')">Resume</b-nav-item> -->
       </b-navbar-nav>
@@ -26,8 +26,19 @@
 <script>
 export default {
 	name: 'TheMainNav',
+  data: function () {
+    return {
+      activeSection: 'my-life'
+    }
+  },
 	methods: {
     async makeActiveSection (section) {
+      if (section === this.activeSection) {
+        return
+      } else {
+        this.activeSection = section
+      }
+
       this.removeAnimations()
 
       const selectedActiveElement = document.getElementById(section)
@@ -47,8 +58,8 @@ export default {
       const myLifeEl = document.getElementById('my-life')
       myLifeEl.classList.remove('animate-section')
 
-      // const myWorkEl = document.getElementById('my-work')
-      // myWorkEl.classList.remove('animate-section')
+      const mySkillsEl = document.getElementById('my-skills')
+      mySkillsEl.classList.remove('animate-section')
 
       const myPhilosophiesEl = document.getElementById('my-philosophies')
       myPhilosophiesEl.classList.remove('animate-section')

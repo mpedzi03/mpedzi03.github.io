@@ -6,8 +6,8 @@
     <div id="active-section"></div>
 
     <my-life/>
-    <my-work/>
-    <my-philosophies/>
+    <my-skills/>
+    <my-experience/>
 
     <the-footer/>
   </div>
@@ -17,8 +17,8 @@
 import TheNavbar from '@/components/shared/TheNavbar.vue'
 import TheBanner from '@/components/shared/TheBanner.vue'
 import MyLife from '@/views/MyLife.vue'
-import MyWork from '@/views/MyWork.vue'
-import MyPhilosophies from '@/views/MyPhilosophies.vue'
+import MySkills from '@/views/MySkills.vue'
+import MyExperience from '@/views/MyExperience.vue'
 import TheFooter from '@/components/shared/TheFooter.vue'
 
 export default {
@@ -27,8 +27,8 @@ export default {
     TheBanner,
     TheNavbar,
     MyLife,
-    MyWork,
-    MyPhilosophies,
+    MySkills,
+    MyExperience,
     TheFooter
   },
   data: function () {
@@ -54,11 +54,32 @@ export default {
   text-align: center
 
 body
-  background: url('./assets/bg/whitesimple.jpg') no-repeat center center fixed
+  background: url('./assets/bg/home3.jpg') no-repeat center center fixed
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
   background-size: cover
+
+strong
+  color: $font-color-heading
+
+p
+  color: $font-color-main
+
+li
+  color: $font-color-main
+
+@media only screen and (min-width: 768px)
+  .mobile-view
+    display: none
+
+@media only screen and (max-width: 768px)
+  .desktop-view
+    display: none
+  #skill-details
+    padding: 25px
+
+
 
 .content-block
     display: flex
