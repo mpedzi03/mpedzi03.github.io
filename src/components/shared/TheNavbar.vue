@@ -8,7 +8,7 @@
       <b-navbar-nav>
         <b-nav-item href="#" @click="makeActiveSection('my-life')">About Me</b-nav-item>
         <b-nav-item href="#" @click="makeActiveSection('my-skills')">My Skills</b-nav-item>
-        <b-nav-item href="#" @click="makeActiveSection('my-philosophies')">My Philosophies</b-nav-item>
+        <b-nav-item href="#" @click="makeActiveSection('my-experience')">My Experience</b-nav-item>
         <!-- <b-nav-item href="#" @click="makeActiveSection('my-life')">Resume</b-nav-item> -->
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
@@ -61,8 +61,8 @@ export default {
       const mySkillsEl = document.getElementById('my-skills')
       mySkillsEl.classList.remove('animate-section')
 
-      const myPhilosophiesEl = document.getElementById('my-philosophies')
-      myPhilosophiesEl.classList.remove('animate-section')
+      const myExperienceEl = document.getElementById('my-experience')
+      myExperienceEl.classList.remove('animate-section')
     },
     sleep (ms) {
       return new Promise(resolve => setTimeout(resolve, ms))
