@@ -1,15 +1,27 @@
 <template>
   <div id="my-experience">
-    <div class="row">
-      <div class="col">
-        <h4><strong>Education: </strong><em>Lewis University - Romeoville, IL</em></h4>
-        <p>Bachelor's Degree in Computer Science</p>
-        <p>Minor in Cyber Security</p>
-      </div>
-      <div class="col">
-        <h4><strong>Professional Experience: </strong></h4>
-        <p>730 days as Junior Application Developer</p>
-        <p>{{experience}} days as Application Developer II</p>
+    <div class="d-flex justify-content-around align-items-center">
+      <div>
+        <p><strong>Accomplishments: </strong></p>
+        <p>Bachelor's Degree in Computer Science from Lewis University
+          <b-icon-map
+            v-b-tooltip.hover
+            title="Click to open in Google maps"
+            class="icon"
+            @click="openNewTab('https://goo.gl/maps/YwnEhjMcsvLPTkKV6')"
+          >
+          </b-icon-map>
+        </p>
+        <p>Published article about Python Forensics in eForensics
+          <b-icon-newspaper
+            v-b-tooltip.hover 
+            title="Click to check out eForensics issue"
+            class="icon"
+            @click="openNewTab('https://eforensicsmag.com/download/open-source-tools-and-their-developers/')"
+          >
+          </b-icon-newspaper>
+        </p>
+        <p>{{experience}} days as a professional developer</p>
       </div>
     </div>
   </div>
@@ -22,7 +34,7 @@ export default {
   name: 'MyExperience',
   data: function () {
     return {
-      experience: this.dateDifference(new Date('2020-10-30'), new Date())
+      experience: this.dateDifference(new Date('2018-10-30'), new Date())
     }
   },
   methods: {
@@ -32,12 +44,19 @@ export default {
 
       return Math.floor((utc2 - utc1) / _MS_PER_DAY)
     },
+    openNewTab (link) {
+      window.open(link, '_blank')
+      window.open(link, '_blank')
+    }
   }
 }
 </script>
 
 <style lang="sass">
 #my-experience
+
+.icon:hover
+    cursor: pointer
 </style>
 
 /*

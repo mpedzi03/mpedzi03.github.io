@@ -1,39 +1,38 @@
 <template>
   <div id="my-skills">
-    <div>
-      <div>
-        <b-tabs
-          v-model="tabIndex"
-          content-class="my-3"
-          align="center"
-          active-nav-item-class="text-uppercase font-weight-bold text-danger"
+      <b-tabs
+        v-model="tabIndex"
+        content-class="my-3"
+        align="center"
+        active-nav-item-class="text-uppercase font-weight-bold text-danger"
+      >
+        <b-tab
+          v-for="concept in skillData"
+          :key="concept.id"
+          :title="concept.name"
+          :title-link-class="linkClass(concept.id)"
         >
-          <b-tab
-            v-for="concept in skillData"
-            :key="concept.id"
-            :title="concept.name"
-            :title-link-class="linkClass(concept.id)"
-          >
-            <div class="row no-gutters">
-              <div id="skill-logo" class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
-                <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="375" height="225" class="rounded-img desktop-view">
-                <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="225" height="135" class="rounded-img mobile-view">
-              </div>
-              <div id="skill-details" class="col-12 col-sm-6 d-flex justify-content-start">
-                <div>
-                  <p><strong>Description: </strong>{{concept.description}}</p>
-                  <p><strong>Experience: </strong>{{concept.experience}} years</p>
-                  <ul>
-                    <li v-for="note in concept.notes" :key="note">{{note}}</li>
-                  </ul>
-                </div>
+          <div class="row no-gutters">
+            <div>
+              <h1>My Skills</h1>
+            </div>
+            <div id="skill-logo" class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
+              <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="375" height="225" class="rounded-img desktop-view">
+              <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="225" height="135" class="rounded-img mobile-view">
+            </div>
+            <div id="skill-details" class="col-12 col-sm-6 d-flex justify-content-start">
+              <div>
+                <p><strong>Description: </strong>{{concept.description}}</p>
+                <p><strong>Experience: </strong>{{concept.experience}} years</p>
+                <ul>
+                  <li v-for="note in concept.notes" :key="note">{{note}}</li>
+                </ul>
               </div>
             </div>
-          </b-tab>
-        </b-tabs>
-        <hr>
-      </div>
-    </div>
+          </div>
+        </b-tab>
+      </b-tabs>
+      <hr>
   </div>
 </template>
 
