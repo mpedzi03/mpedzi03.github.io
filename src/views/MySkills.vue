@@ -1,38 +1,38 @@
 <template>
-  <div id="my-skills">
-      <b-tabs
-        v-model="tabIndex"
-        content-class="my-3"
-        align="center"
-        active-nav-item-class="text-uppercase font-weight-bold text-danger"
+  <div>
+    <b-tabs
+      v-model="tabIndex"
+      content-class="my-3"
+      align="center"
+      active-nav-item-class="text-uppercase font-weight-bold text-danger"
+    >
+      <b-tab
+        v-for="concept in skillData"
+        :key="concept.id"
+        :title="concept.name"
+        :title-link-class="linkClass(concept.id)"
       >
-        <b-tab
-          v-for="concept in skillData"
-          :key="concept.id"
-          :title="concept.name"
-          :title-link-class="linkClass(concept.id)"
-        >
-          <div class="row no-gutters">
+        <div id="my-skills">
+          <div id="skill-section">
+            <h1>My Skills</h1>
+          </div>
+          <div id="skill-logo">
+            <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="375" height="225" class="rounded-img desktop-view">
+            <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="225" height="135" class="rounded-img mobile-view">
+          </div>
+          <div id="skill-details">
             <div>
-              <h1>My Skills</h1>
-            </div>
-            <div id="skill-logo" class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
-              <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="375" height="225" class="rounded-img desktop-view">
-              <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="225" height="135" class="rounded-img mobile-view">
-            </div>
-            <div id="skill-details" class="col-12 col-sm-6 d-flex justify-content-start">
-              <div>
-                <p><strong>Description: </strong>{{concept.description}}</p>
-                <p><strong>Experience: </strong>{{concept.experience}} years</p>
-                <ul>
-                  <li v-for="note in concept.notes" :key="note">{{note}}</li>
-                </ul>
-              </div>
+              <p><strong>Description: </strong>{{concept.description}}</p>
+              <p><strong>Experience: </strong>{{concept.experience}} years</p>
+              <ul>
+                <li v-for="note in concept.notes" :key="note">{{note}}</li>
+              </ul>
             </div>
           </div>
-        </b-tab>
-      </b-tabs>
-      <hr>
+        </div>
+      </b-tab>
+    </b-tabs>
+    <hr>
   </div>
 </template>
 
@@ -62,6 +62,32 @@ export default {
 </script>
 
 <style lang="sass">
+#my-skills
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  align-items: center
+
+#skill-section, #skill-logo
+  flex-basis: 1
+
+#skill-details
+  flex-basis: 40%
+
+@media only screen and (max-width: 1199px)
+  .desktop-view
+    display: none
+  #skill-details
+    padding: 25px
+
+@media only screen and (min-width: 1200px)
+  .mobile-view
+    display: none
+
+@media only screen and (max-width: 991px)
+  #my-skills
+    flex-direction: column
+
 .rounded-img
   border-radius: 30px
   border: 2px solid purple

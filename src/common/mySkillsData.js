@@ -37,6 +37,19 @@ export const skillData = [
   },
   {
     id: 4,
+    name: 'css',
+    description: 'Design language intended to simplify the process of making web pages presentable',
+    experience: 3.5,
+    imgURLParam: 'java',
+    notes: [
+      'Love, LOVE, LOVE CSS. Secret hobby of mine',
+      'Built organized and mobile responsive web apps with CSS Grid',
+      'Flexbox is a passion of mine',
+      'Plenty of experience with Bootstrap and Bootstrap-Vue'
+    ]
+  },
+  {
+    id: 5,
     name: 'vue',
     description: 'Progressive JS framework for building awesome user interfaces',
     experience: 2,
@@ -48,7 +61,7 @@ export const skillData = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: 'webpack',
     description: 'Static module bundler for modern Javascript applications',
     experience: 2,

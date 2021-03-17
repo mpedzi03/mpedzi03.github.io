@@ -1,12 +1,6 @@
 <template>
   <div id="profile-section">
-    <img
-      id="profile-image"
-      srcset="@/assets/img/profile_picture_small.jpg 700w,
-              @/assets/img/profile_picture_large.jpg 991w"
-      sizes="(max-width: 991px) 700px, 991px"
-      src="@/assets/img/profile_picture_large.jpg"
-    >
+    <img id="profile-image" src="@/assets/img/profile_picture_large.jpg">
     <!-- <div>
       <b-button
         id="contact-button"
@@ -50,27 +44,34 @@ export default {
    alt: "Me"
    text-align: center
 
-#profile-contact
-  width: 250px
-  text-align: center
+#profile-image
+  width: 30vw
 
-#contact-button
-  width: 250px
-  background-color: #89adc7
-  color: #ffffff
+@media screen and (max-width: 1200px)
+  #profile-image
+    width: 60vw
 
-#contact-button:hover
-  background-color: #7692a6
+// #profile-contact
+//   width: 250px
+//   text-align: center
 
-#contact-button:active
-  background-color: #536069
+// #contact-button
+//   width: 250px
+//   background-color: #89adc7
+//   color: #ffffff
 
-#contact-button
-  &.active
-    background-color: #536069
+// #contact-button:hover
+//   background-color: #7692a6
 
-.list-group-item:hover
-  background-color: #7692a6 !important
-  color: #ffffff !important
+// #contact-button:active
+//   background-color: #536069
+
+// #contact-button
+//   &.active
+//     background-color: #536069
+
+// .list-group-item:hover
+//   background-color: #7692a6 !important
+//   color: #ffffff !important
 
 </style>

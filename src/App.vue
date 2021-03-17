@@ -69,17 +69,8 @@ p
 li
   color: $font-color-main
 
-@media only screen and (min-width: 768px)
-  .mobile-view
-    display: none
-
-@media only screen and (max-width: 768px)
-  .desktop-view
-    display: none
-  #skill-details
-    padding: 25px
-
-
+h1
+  color: $font-color-heading
 
 .content-block
     display: flex
