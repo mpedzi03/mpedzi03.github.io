@@ -14,7 +14,11 @@
       >
         <div id="my-skills">
           <div id="skill-section">
-            <h1>My Skills</h1>
+            <h1>
+              <b-icon-flower1></b-icon-flower1>
+              My Skills
+              <b-icon-flower1></b-icon-flower1>
+            </h1>
           </div>
           <div id="skill-logo">
             <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="375" height="225" class="rounded-img desktop-view">

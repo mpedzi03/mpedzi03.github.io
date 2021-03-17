@@ -40,7 +40,7 @@ export const skillData = [
     name: 'css',
     description: 'Design language intended to simplify the process of making web pages presentable',
     experience: 3.5,
-    imgURLParam: 'java',
+    imgURLParam: 'css',
     notes: [
       'Love, LOVE, LOVE CSS. Secret hobby of mine',
       'Built organized and mobile responsive web apps with CSS Grid',
