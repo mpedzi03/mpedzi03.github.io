@@ -77,10 +77,9 @@ h1
     align-items: center
     justify-content: center
 
-#active-section
-  > div
-    animation-name: slidein
-    animation-duration: 1s
+#active-section > div
+  animation-name: slidein
+  animation-duration: 1s
 
 .animate-section
     animation-name: slideout

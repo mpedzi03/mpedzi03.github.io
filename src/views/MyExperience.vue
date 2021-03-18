@@ -1,7 +1,12 @@
 <template>
   <div id="my-experience">
-    <div class="d-flex justify-content-around align-items-center">
-      <div>
+    <div class="row no-gutters">
+      <div id="experience-header" class="col-12 col-lg-3">
+          <h1><b-icon-flower3></b-icon-flower3></h1>
+          <h1 class="px-3">My Experience</h1>
+          <h1><b-icon-flower3></b-icon-flower3></h1>
+      </div>
+      <div id="experience-details" class="col-12 col-lg-9">
         <p><strong>Accomplishments: </strong></p>
         <p>Bachelor's Degree in Computer Science from Lewis University
           <b-icon-map
@@ -53,7 +58,11 @@ export default {
 </script>
 
 <style lang="sass">
-#my-experience
+#experience-header
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
 
 .icon:hover
     cursor: pointer
