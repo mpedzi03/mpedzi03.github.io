@@ -14,7 +14,7 @@
         </p>
         <p>Published article about Python Forensics in eForensics
           <b-icon-newspaper
-            v-b-tooltip.hover 
+            v-b-tooltip.hover
             title="Click to check out eForensics issue"
             class="icon"
             @click="openNewTab('https://eforensicsmag.com/download/open-source-tools-and-their-developers/')"

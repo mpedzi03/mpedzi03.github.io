@@ -38,18 +38,18 @@ export default {
 </script>
 
 <style lang="sass">
-#profile-image
-   border-radius: 5%
-   border: 2px solid $font-color-heading
-   alt: "Me"
-   text-align: center
+// #profile-image
+//    border-radius: 5%
+//    border: 2px solid $font-color-heading
+//    alt: "Me"
+//    text-align: center
 
-#profile-image
-  width: 30vw
+// #profile-image
+//   width: 30vw
 
-@media screen and (max-width: 1200px)
-  #profile-image
-    width: 60vw
+// @media screen and (max-width: 1200px)
+//   #profile-image
+//     width: 60vw
 
 // #profile-contact
 //   width: 250px

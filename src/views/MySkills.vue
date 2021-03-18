@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="my-skills">
     <b-tabs
       v-model="tabIndex"
       content-class="my-3"
@@ -12,19 +12,19 @@
         :title="concept.name"
         :title-link-class="linkClass(concept.id)"
       >
-        <div id="my-skills">
-          <div id="skill-section">
+        <div id="my-skills-section">
+          <div id="skills-header">
             <h1>
               <b-icon-flower1></b-icon-flower1>
               My Skills
               <b-icon-flower1></b-icon-flower1>
             </h1>
           </div>
-          <div id="skill-logo">
+          <div id="skills-logo">
             <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="375" height="225" class="rounded-img desktop-view">
             <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="225" height="135" class="rounded-img mobile-view">
           </div>
-          <div id="skill-details">
+          <div id="skills-detail">
             <div>
               <p><strong>Description: </strong>{{concept.description}}</p>
               <p><strong>Experience: </strong>{{concept.experience}} years</p>
@@ -66,22 +66,22 @@ export default {
 </script>
 
 <style lang="sass">
-#my-skills
+#my-skills-section
   display: flex
   flex-wrap: wrap
   justify-content: space-around
   align-items: center
 
-#skill-section, #skill-logo
+#skills-header, #skills-logo
   flex-basis: 1
 
-#skill-details
+#skills-detail
   flex-basis: 40%
 
 @media only screen and (max-width: 1199px)
   .desktop-view
     display: none
-  #skill-details
+  #skills-detail
     padding: 25px
 
 @media only screen and (min-width: 1200px)
