@@ -1,13 +1,11 @@
 <template>
-  <div id="my-life" class="row d-flex no-gutters">
-    <div id="life-header" class="col-12 col-lg-3 align-self-center text-center">
-      <h1 class="py-3">
-        <b-icon-flower2></b-icon-flower2>
-        My Life
-        <b-icon-flower2></b-icon-flower2>
-      </h1>
+  <div id="my-life" class="row no-gutters">
+    <div id="life-header" class="col-12 col-lg-3">
+      <h1><b-icon-flower2></b-icon-flower2></h1>
+      <h1 class="px-3">My Life</h1>
+      <h1><b-icon-flower2></b-icon-flower2></h1>
     </div>
-    <div id="life-picture" class="col-12 col-lg-3 align-self-center">
+    <div id="life-picture" class="col-12 col-lg-3">
       <img id="profile-image" src="@/assets/img/profile_picture_large.jpg">
     </div>
     <div id="life-main" class="col-12 col-lg-5 align-self-center py-3">
@@ -31,6 +29,13 @@ export default {
 </script>
 
 <style lang="sass">
+#life-header
+  display: flex
+  flex-direction: column
+  padding: 1rem 0 1rem 0
+  justify-content: center
+  align-items: center
+
 #profile-image
   margin: 2rem 0 2rem 0
   border-radius: 5%
@@ -39,6 +44,8 @@ export default {
   width: 20vw
 
 @media only screen and (max-width: 991px)
+  #life-header
+    flex-direction: row
   #life-picture
     text-align: center
   #profile-image

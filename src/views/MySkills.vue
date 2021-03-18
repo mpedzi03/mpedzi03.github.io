@@ -13,21 +13,19 @@
         :title="concept.name"
         :title-link-class="linkClass(concept.id)"
       >
-        <div class="row d-flex no-gutters">
-          <div id="skills-header" class="col-12 col-lg-3 align-self-center text-center">
-            <h1 class="py-3">
-              <b-icon-flower1></b-icon-flower1>
-              My Skills
-              <b-icon-flower1></b-icon-flower1>
-            </h1>
+        <div class="row no-gutters">
+          <div id="skills-header" class="col-12 col-lg-3">
+            <h1><b-icon-flower1></b-icon-flower1></h1>
+            <h1 class="px-3">My Skills</h1>
+            <h1><b-icon-flower1></b-icon-flower1></h1>
           </div>
           <div id="skills-logo" class="col-12 col-lg-3 align-self-center">
             <img id="skill-image" :src="getImgURL(concept.imgURLParam)" alt="Logo Img">
           </div>
           <div id="skills-detail" class="col-12 col-lg-5 align-self-center py-3">
             <div>
-              <p><strong>Description: </strong>{{concept.description}}</p>
-              <p><strong>Experience: </strong>{{concept.experience}} years</p>
+              <p class="text-center"><strong>Description: </strong>{{concept.description}}</p>
+              <p class="text-center"><strong>Experience: </strong>{{concept.experience}} years</p>
               <ul>
                 <li v-for="note in concept.notes" :key="note">{{note}}</li>
               </ul>
@@ -66,6 +64,13 @@ export default {
 </script>
 
 <style lang="sass">
+#skills-header
+  display: flex
+  flex-direction: column
+  padding: 1rem 0 1rem 0
+  justify-content: center
+  align-items: center
+
 #skill-image
   margin: 2rem 0 2rem 0
   border-radius: 5%
@@ -74,6 +79,8 @@ export default {
   width: 20vw
 
 @media only screen and (max-width: 991px)
+  #skills-header
+    flex-direction: row
   #skills-logo
     text-align: center
   #skill-image
