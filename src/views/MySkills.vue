@@ -1,10 +1,11 @@
 <template>
   <div id="my-skills">
     <b-tabs
+      justified
       v-model="tabIndex"
-      content-class="my-3"
+      content-class="py-3"
       align="center"
-      active-nav-item-class="text-uppercase font-weight-bold text-danger"
+      active-nav-item-class="active-skill-nav-item"
     >
       <b-tab
         v-for="concept in skillData"
@@ -12,19 +13,18 @@
         :title="concept.name"
         :title-link-class="linkClass(concept.id)"
       >
-        <div id="my-skills-section">
-          <div id="skills-header">
-            <h1>
+        <div class="row d-flex no-gutters">
+          <div id="skills-header" class="col-12 col-lg-3 align-self-center text-center">
+            <h1 class="py-3">
               <b-icon-flower1></b-icon-flower1>
               My Skills
               <b-icon-flower1></b-icon-flower1>
             </h1>
           </div>
-          <div id="skills-logo">
-            <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="375" height="225" class="rounded-img desktop-view">
-            <img :src="getImgURL(concept.imgURLParam)" alt="Logo Img" width="225" height="135" class="rounded-img mobile-view">
+          <div id="skills-logo" class="col-12 col-lg-3 align-self-center">
+            <img id="skill-image" :src="getImgURL(concept.imgURLParam)" alt="Logo Img">
           </div>
-          <div id="skills-detail">
+          <div id="skills-detail" class="col-12 col-lg-5 align-self-center py-3">
             <div>
               <p><strong>Description: </strong>{{concept.description}}</p>
               <p><strong>Experience: </strong>{{concept.experience}} years</p>
@@ -58,7 +58,7 @@ export default {
     },
     linkClass(id) {
       if (id !== this.tabIndex) {
-        return ['bg-dark', 'text-light']
+        return ['inactive-skill-nav-item']
       }
     }
   }
@@ -66,40 +66,53 @@ export default {
 </script>
 
 <style lang="sass">
-#my-skills-section
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-around
-  align-items: center
-
-#skills-header, #skills-logo
-  flex-basis: 1
-
-#skills-detail
-  flex-basis: 40%
-
-@media only screen and (max-width: 1199px)
-  .desktop-view
-    display: none
-  #skills-detail
-    padding: 25px
-
-@media only screen and (min-width: 1200px)
-  .mobile-view
-    display: none
+#skill-image
+  margin: 2rem 0 2rem 0
+  border-radius: 5%
+  border: 2px solid $font-color-heading
+  alt: "Logo!"
+  width: 20vw
 
 @media only screen and (max-width: 991px)
-  #my-skills
-    flex-direction: column
+  #skills-logo
+    text-align: center
+  #skill-image
+    width: 40vw
+    margin: 0 0 0 0
+  #skills-detail
+    padding-left: 1rem
+    padding-right: 1rem
+
+// @media only screen and (max-width: 1199px)
+//   .desktop-view
+//     display: none
+//   #skills-detail
+//     padding: 25px
+
+// @media only screen and (min-width: 1200px)
+//   .mobile-view
+//     display: none
+
+.active-skill-nav-item
+  color: $font-color-heading !important
+  background-color: $font-color-dark !important
+  border-color: $font-color-heading !important
+  font-weight: bold
+  text-transform: uppercase
+
+.inactive-skill-nav-item
+  color: $font-color-dark !important
+  background-color: $font-color-heading !important
+  border-color: $font-color-dark !important
 
 .rounded-img
   border-radius: 30px
-  border: 2px solid purple
+  border: 2px solid $font-color-heading
 
-.nav-link
-  color: #310c87
+// .nav-link
+//   color: #310c87
 
-.skill-link
-  color: #4D4814
+// .skill-link
+//   color: #4D4814
 
 </style>
