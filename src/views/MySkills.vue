@@ -64,6 +64,10 @@ export default {
 </script>
 
 <style lang="sass">
+#my-skills
+  border-bottom-width: 5px
+  border-bottom-style: solid
+  border-bottom-color: $font-color-heading
 #skills-header
   display: flex
   flex-direction: column

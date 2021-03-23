@@ -58,6 +58,14 @@ export default {
 </script>
 
 <style lang="sass">
+#my-experience
+  border-top-width: 5px
+  border-top-style: solid
+  border-top-color: $font-color-heading
+  border-bottom-width: 5px
+  border-bottom-style: solid
+  border-bottom-color: $font-color-heading
+
 #experience-header
   display: flex
   flex-direction: column

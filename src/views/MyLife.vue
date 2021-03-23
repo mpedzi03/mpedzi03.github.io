@@ -5,7 +5,7 @@
       <h1 class="px-3">My Life</h1>
       <h1><b-icon-flower2></b-icon-flower2></h1>
     </div>
-    <div id="life-picture" class="col-12 col-lg-3">
+    <div id="life-picture" class="col-12 col-lg-3 my-auto">
       <img id="profile-image" src="@/assets/img/profile_picture_large.jpg">
     </div>
     <div id="life-main" class="col-12 col-lg-5 align-self-center py-3">
@@ -29,6 +29,13 @@ export default {
 </script>
 
 <style lang="sass">
+#my-life
+  border-top-width: 5px
+  border-top-style: solid
+  border-top-color: $font-color-heading
+  border-bottom-width: 5px
+  border-bottom-style: solid
+  border-bottom-color: $font-color-heading
 #life-header
   display: flex
   flex-direction: column
