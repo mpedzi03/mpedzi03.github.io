@@ -10,7 +10,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-bg-variant="info" header-border-variant="info" header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-1 variant="info">Education</b-button>
+            <b-button block v-b-toggle.accordion-1>Education</b-button>
           </b-card-header>
           <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
             <b-card-body body-bg-variant="info">
@@ -31,7 +31,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-2 variant="info">Publishing</b-button>
+            <b-button block v-b-toggle.accordion-2>Publishing</b-button>
           </b-card-header>
           <b-collapse id="accordion-2" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -52,7 +52,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-3 variant="info">Career</b-button>
+            <b-button block v-b-toggle.accordion-3>Career</b-button>
           </b-card-header>
           <b-collapse id="accordion-3" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -65,7 +65,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-4 variant="info">Sharing</b-button>
+            <b-button block v-b-toggle.accordion-4>Sharing</b-button>
           </b-card-header>
           <b-collapse id="accordion-4" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -82,7 +82,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-5 variant="info">Teaching</b-button>
+            <b-button block v-b-toggle.accordion-5>Teaching</b-button>
           </b-card-header>
           <b-collapse id="accordion-5" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
