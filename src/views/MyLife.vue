@@ -32,10 +32,10 @@ export default {
 #my-life
   border-top-width: 5px
   border-top-style: solid
-  border-top-color: $font-color-heading
+  border-top-color: $font-color-main
   border-bottom-width: 5px
   border-bottom-style: solid
-  border-bottom-color: $font-color-heading
+  border-bottom-color: $font-color-main
 #life-header
   display: flex
   flex-direction: column
@@ -46,7 +46,7 @@ export default {
 #profile-image
   margin: 2rem 0 2rem 0
   border-radius: 5%
-  border: 2px solid $font-color-heading
+  border: 2px solid $font-color-main
   alt: "Me"
   width: 20vw
 

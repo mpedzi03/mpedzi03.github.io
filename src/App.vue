@@ -61,16 +61,16 @@ body
   background-size: cover
 
 strong
-  color: $font-color-heading
+  color: $font-color-main
 
 p
-  color: $font-color-main
+  color: $font-color-light
 
 li
-  color: $font-color-main
+  color: $font-color-light
 
 h1
-  color: $font-color-heading
+  color: $font-color-main
 
 .content-block
     display: flex

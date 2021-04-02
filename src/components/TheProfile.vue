@@ -40,7 +40,7 @@ export default {
 <style lang="sass">
 // #profile-image
 //    border-radius: 5%
-//    border: 2px solid $font-color-heading
+//    border: 2px solid $font-color-main
 //    alt: "Me"
 //    text-align: center
 

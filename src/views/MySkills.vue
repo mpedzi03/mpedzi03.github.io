@@ -67,7 +67,7 @@ export default {
 #my-skills
   border-bottom-width: 5px
   border-bottom-style: solid
-  border-bottom-color: $font-color-heading
+  border-bottom-color: $font-color-main
 #skills-header
   display: flex
   flex-direction: column
@@ -78,7 +78,7 @@ export default {
 #skill-image
   margin: 2rem 0 2rem 0
   border-radius: 5%
-  border: 2px solid $font-color-heading
+  border: 2px solid $font-color-main
   alt: "Logo!"
   width: 20vw
 
@@ -105,20 +105,20 @@ export default {
 //     display: none
 
 .active-skill-nav-item
-  color: $font-color-heading !important
+  color: $font-color-main !important
   background-color: $font-color-dark !important
-  border-color: $font-color-heading !important
+  border-color: $font-color-main !important
   font-weight: bold
   text-transform: uppercase
 
 .inactive-skill-nav-item
   color: $font-color-dark !important
-  background-color: $font-color-heading !important
+  background-color: $font-color-main !important
   border-color: $font-color-dark !important
 
 .rounded-img
   border-radius: 30px
-  border: 2px solid $font-color-heading
+  border: 2px solid $font-color-main
 
 // .nav-link
 //   color: #310c87

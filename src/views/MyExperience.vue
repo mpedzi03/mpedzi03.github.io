@@ -6,14 +6,14 @@
           <h1 class="px-3">My Deeds</h1>
           <h1><b-icon-flower3></b-icon-flower3></h1>
       </div>
-      <div id="experience-details" class="accordion col-12 col-lg-7 offset-lg-2" role="tablist">
+      <div id="experience-details" class="accordion col-12 col-lg-6 offset-lg-2 my-4" role="tablist">
 
         <b-card no-body class="mb-1">
-          <b-card-header header-bg-variant="info" header-border-variant="info" header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-1 variant="info">Education</b-button>
+          <b-card-header header-tag="header" class="p-1" role="tab">
+            <b-button block v-b-toggle.accordion-1>education</b-button>
           </b-card-header>
           <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
-            <b-card-body body-bg-variant="info">
+            <b-card-body>
               <b-card-text>
                   <p>Achieved Bachelor's degree in Computer Science from Lewis University with Alpha Sigma Lambda status
                   <b-icon-map
@@ -31,7 +31,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-2 variant="info">Publishing</b-button>
+            <b-button block v-b-toggle.accordion-2>publishing</b-button>
           </b-card-header>
           <b-collapse id="accordion-2" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -52,7 +52,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-3 variant="info">Career</b-button>
+            <b-button block v-b-toggle.accordion-3>career</b-button>
           </b-card-header>
           <b-collapse id="accordion-3" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -65,12 +65,13 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-4 variant="info">Sharing</b-button>
+            <b-button block v-b-toggle.accordion-4>sharing</b-button>
           </b-card-header>
           <b-collapse id="accordion-4" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
               <b-card-text>
                 <p>Hosted and contributed to lunch & learns on exciting topics such as VueJS and RESTful API development</p>
+
                 <p>Participated in a few company sponsored Hackathons, where I was part of an awesome team that was able to introduce new and exciting ideas to the business and IT team. One year we
                   brought to the table a slick customer facing mobile app built using the Ionic framework and Cordova. The following year we introduced a business facing software management system SPA built
                   using VueJS.
@@ -82,7 +83,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-5 variant="info">Teaching</b-button>
+            <b-button block v-b-toggle.accordion-5>teaching</b-button>
           </b-card-header>
           <b-collapse id="accordion-5" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -127,14 +128,14 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 #my-experience
   border-top-width: 5px
   border-top-style: solid
-  border-top-color: $font-color-heading
+  border-top-color: $font-color-main
   border-bottom-width: 5px
   border-bottom-style: solid
-  border-bottom-color: $font-color-heading
+  border-bottom-color: $font-color-main
 
 #experience-header
   display: flex
@@ -149,6 +150,24 @@ export default {
 
 .icon:hover
     cursor: pointer
+
+button
+  background-color: $font-color-main
+  color: $font-color-dark
+button:hover
+  background-color: #ebdd4d
+  color: $font-color-dark
+button:active
+  background-color: $font-color-dark !important
+  color: $font-color-main !important
+button:focus
+  background-color: $font-color-dark
+  font-weight: bold
+  text-transform: uppercase
+  color: $font-color-main
+#experience-details > div
+  background-color: $font-color-dark
+
 </style>
 
 /*
