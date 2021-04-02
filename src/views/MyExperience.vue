@@ -9,6 +9,7 @@
       <div id="experience-details" class="accordion col-12 col-lg-6 offset-lg-2 my-4" role="tablist">
 
         <b-card no-body class="mb-1">
+
           <b-card-header header-tag="header" class="p-1" role="tab">
             <b-button block v-b-toggle.accordion-1>education</b-button>
           </b-card-header>
