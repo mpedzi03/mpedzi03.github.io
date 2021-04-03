@@ -1,7 +1,7 @@
 <template>
-  <div id="main" class="container-fluid px-0">
+  <div id="main" class="container-fluid">
     <the-navbar/>
-    <the-banner/>
+    <div class="row"><the-banner/></div>
 
     <div id="active-section"></div>
 
@@ -9,7 +9,7 @@
     <my-skills/>
     <my-experience/>
 
-    <the-footer/>
+    <div class="row"><the-footer/></div>
   </div>
 </template>
 
@@ -54,23 +54,12 @@ export default {
   text-align: center
 
 body
-  background: url('./assets/bg/home_main.jpg') no-repeat center center fixed
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
+  background-color: $font-color-primary !important
 
-strong
-  color: $font-color-main
-
-p
-  color: $font-color-light
-
-li
-  color: $font-color-light
-
-h1
-  color: $font-color-main
+strong, h1
+  color: $font-color-secondary
+p, li
+  color: $font-color-dark
 
 .content-block
     display: flex
@@ -103,4 +92,9 @@ h1
   to
     margin-left: 100%
     width: 300%
+
+.canvas
+  background-color: #BEAFC2
+  border-radius: 25px
+  margin: 3rem !important
 </style>

@@ -3,7 +3,7 @@
     <b-tabs
       justified
       v-model="tabIndex"
-      content-class="py-3"
+      content-class=""
       align="center"
       active-nav-item-class="active-skill-nav-item"
     >
@@ -13,7 +13,7 @@
         :title="concept.name"
         :title-link-class="linkClass(concept.id)"
       >
-        <div class="row no-gutters">
+        <div class="canvas row">
           <div id="skills-header" class="col-12 col-lg-3">
             <h1><b-icon-flower1></b-icon-flower1></h1>
             <h1 class="px-3">My Skills</h1>
@@ -34,7 +34,7 @@
         </div>
       </b-tab>
     </b-tabs>
-    <hr>
+
   </div>
 </template>
 
@@ -64,10 +64,10 @@ export default {
 </script>
 
 <style lang="sass">
-#my-skills
-  border-bottom-width: 5px
-  border-bottom-style: solid
-  border-bottom-color: $font-color-main
+// #my-skills
+//   border-bottom-width: 5px
+//   border-bottom-style: solid
+//   border-bottom-color: $font-color-primary
 #skills-header
   display: flex
   flex-direction: column
@@ -78,7 +78,7 @@ export default {
 #skill-image
   margin: 2rem 0 2rem 0
   border-radius: 5%
-  border: 2px solid $font-color-main
+  border: 2px solid $font-color-primary
   alt: "Logo!"
   width: 20vw
 
@@ -105,20 +105,20 @@ export default {
 //     display: none
 
 .active-skill-nav-item
-  color: $font-color-main !important
+  color: $font-color-primary !important
   background-color: $font-color-dark !important
-  border-color: $font-color-main !important
+  border-color: $font-color-primary !important
   font-weight: bold
   text-transform: uppercase
 
 .inactive-skill-nav-item
   color: $font-color-dark !important
-  background-color: $font-color-main !important
+  background-color: $font-color-primary !important
   border-color: $font-color-dark !important
 
 .rounded-img
   border-radius: 30px
-  border: 2px solid $font-color-main
+  border: 2px solid $font-color-primary
 
 // .nav-link
 //   color: #310c87

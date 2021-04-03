@@ -1,6 +1,6 @@
 <template>
   <div id="my-experience">
-    <div class="row no-gutters">
+    <div class="canvas row">
       <div id="experience-header" class="col-12 col-lg-3">
           <h1><b-icon-flower3></b-icon-flower3></h1>
           <h1 class="px-3">My Deeds</h1>
@@ -130,13 +130,13 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-#my-experience
-  border-top-width: 5px
-  border-top-style: solid
-  border-top-color: $font-color-main
-  border-bottom-width: 5px
-  border-bottom-style: solid
-  border-bottom-color: $font-color-main
+// #my-experience
+//   border-top-width: 5px
+//   border-top-style: solid
+//   border-top-color: $font-color-primary
+//   border-bottom-width: 5px
+//   border-bottom-style: solid
+//   border-bottom-color: $font-color-primary
 
 #experience-header
   display: flex
@@ -155,21 +155,21 @@ export default {
     cursor: pointer
 
 button
-  background-color: $font-color-main
+  background-color: $font-color-primary
   color: $font-color-dark
 button:hover
   background-color: #ebdd4d
   color: $font-color-dark
 button:active
   background-color: $font-color-dark !important
-  color: $font-color-main !important
-  border-color: $font-color-main !important
+  color: $font-color-primary !important
+  border-color: $font-color-primary !important
 button:focus
   background-color: $font-color-dark
   font-weight: bold
   text-transform: uppercase
-  color: $font-color-main
-  border-color: $font-color-main !important
+  color: $font-color-primary
+  border-color: $font-color-primary !important
 #experience-details > div
   background-color: $font-color-dark
 
