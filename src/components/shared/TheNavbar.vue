@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="light" sticky>
+  <b-navbar toggleable="lg" sticky>
     <b-navbar-brand href="#">Home</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -73,5 +73,5 @@ export default {
 
 <style lang="sass">
 .navbar
-  background-color: #cfc8c8
+  background-color: $font-color-main
 </style>

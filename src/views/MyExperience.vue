@@ -148,6 +148,8 @@ export default {
 @media only screen and (max-width: 991px)
   #experience-header
     flex-direction: row
+  #experience-details
+    padding: 0rem 1rem 0rem 1rem
 
 .icon:hover
     cursor: pointer
@@ -161,11 +163,13 @@ button:hover
 button:active
   background-color: $font-color-dark !important
   color: $font-color-main !important
+  border-color: $font-color-main !important
 button:focus
   background-color: $font-color-dark
   font-weight: bold
   text-transform: uppercase
   color: $font-color-main
+  border-color: $font-color-main !important
 #experience-details > div
   background-color: $font-color-dark
 

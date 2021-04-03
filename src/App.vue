@@ -54,7 +54,7 @@ export default {
   text-align: center
 
 body
-  background: url('./assets/bg/home3.jpg') no-repeat center center fixed
+  background: url('./assets/bg/home_main.jpg') no-repeat center center fixed
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
