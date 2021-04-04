@@ -64,10 +64,6 @@ export default {
 </script>
 
 <style lang="sass">
-// #my-skills
-//   border-bottom-width: 5px
-//   border-bottom-style: solid
-//   border-bottom-color: $font-color-primary
 #skills-header
   display: flex
   flex-direction: column
@@ -94,36 +90,19 @@ export default {
     padding-left: 1rem
     padding-right: 1rem
 
-// @media only screen and (max-width: 1199px)
-//   .desktop-view
-//     display: none
-//   #skills-detail
-//     padding: 25px
-
-// @media only screen and (min-width: 1200px)
-//   .mobile-view
-//     display: none
-
 .active-skill-nav-item
-  color: $font-color-primary !important
+  color: $font-color-light !important
   background-color: $font-color-dark !important
-  border-color: $font-color-primary !important
+  border-color: $font-color-dark !important
   font-weight: bold
   text-transform: uppercase
 
 .inactive-skill-nav-item
-  color: $font-color-dark !important
-  background-color: $font-color-primary !important
-  border-color: $font-color-dark !important
+  color: $font-color-light !important
+  background-color: $font-color-secondary !important
+  border-color: $font-color-light !important
 
 .rounded-img
   border-radius: 30px
   border: 2px solid $font-color-primary
-
-// .nav-link
-//   color: #310c87
-
-// .skill-link
-//   color: #4D4814
-
 </style>

@@ -97,4 +97,8 @@ p, li
   background-color: #BEAFC2
   border-radius: 25px
   margin: 3rem !important
+
+@media only screen and (max-width: 576px)
+  .canvas
+    margin: 3rem 1rem 3rem 1rem !important
 </style>

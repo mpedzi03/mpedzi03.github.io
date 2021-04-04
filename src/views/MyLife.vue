@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="sass">
-
-
 #life-header
   display: flex
   flex-direction: column

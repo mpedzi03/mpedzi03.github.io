@@ -11,7 +11,7 @@
         <b-card no-body class="mb-1">
 
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-1>education</b-button>
+            <b-button class="experience-btn" block v-b-toggle.accordion-1>education</b-button>
           </b-card-header>
           <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -32,7 +32,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-2>publishing</b-button>
+            <b-button class="experience-btn" block v-b-toggle.accordion-2>publishing</b-button>
           </b-card-header>
           <b-collapse id="accordion-2" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -53,7 +53,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-3>career</b-button>
+            <b-button class="experience-btn" block v-b-toggle.accordion-3>career</b-button>
           </b-card-header>
           <b-collapse id="accordion-3" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -66,7 +66,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-4>sharing</b-button>
+            <b-button class="experience-btn" block v-b-toggle.accordion-4>sharing</b-button>
           </b-card-header>
           <b-collapse id="accordion-4" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -84,7 +84,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block v-b-toggle.accordion-5>teaching</b-button>
+            <b-button class="experience-btn" block v-b-toggle.accordion-5>teaching</b-button>
           </b-card-header>
           <b-collapse id="accordion-5" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
@@ -129,15 +129,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-// #my-experience
-//   border-top-width: 5px
-//   border-top-style: solid
-//   border-top-color: $font-color-primary
-//   border-bottom-width: 5px
-//   border-bottom-style: solid
-//   border-bottom-color: $font-color-primary
-
+<style lang="sass">
 #experience-header
   display: flex
   flex-direction: column
@@ -145,34 +137,35 @@ export default {
   justify-content: center
   align-items: center
 
+#experience-details > div
+  background-color: $font-color-primary
+
 @media only screen and (max-width: 991px)
   #experience-header
     flex-direction: row
   #experience-details
     padding: 0rem 1rem 0rem 1rem
 
-.icon:hover
-    cursor: pointer
-
-button
+.experience-btn
+  background-color: $font-color-secondary
+  color: $font-color-dark
+.experience-btn:hover
   background-color: $font-color-primary
   color: $font-color-dark
-button:hover
-  background-color: #ebdd4d
-  color: $font-color-dark
-button:active
-  background-color: $font-color-dark !important
-  color: $font-color-primary !important
-  border-color: $font-color-primary !important
-button:focus
+  border-color: $font-color-secondary
+.experience-btn:active
+  background-color: $font-color-dark
+  color: $font-color-primary
+  border-color: $font-color-primary
+.experience-btn:focus
   background-color: $font-color-dark
   font-weight: bold
   text-transform: uppercase
-  color: $font-color-primary
-  border-color: $font-color-primary !important
-#experience-details > div
-  background-color: $font-color-dark
+  color: $font-color-light
+  border-color: $font-color-primary
 
+.icon:hover
+    cursor: pointer
 </style>
 
 /*
