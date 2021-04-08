@@ -73,5 +73,16 @@ export default {
 
 <style lang="sass">
 .navbar
-  background-color: $font-color-light
+  background-color: $font-color-primary
+  width: 100%
+
+.nav-link
+  color: white !important
+.navbar-brand
+  color: white !important
+.navbar-toggler
+  background-color: white !important
+.dropdown-item
+  color: white !important
+  background-color: $font-color-primary !important
 </style>

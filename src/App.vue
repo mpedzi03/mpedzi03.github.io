@@ -1,6 +1,6 @@
 <template>
   <div id="main" class="container-fluid">
-    <the-navbar/>
+    <div class="row"><the-navbar/></div>
     <div class="row"><the-banner/></div>
 
     <div id="active-section"></div>
@@ -60,11 +60,6 @@ strong, h1
   color: $font-color-secondary
 p, li
   color: $font-color-dark
-
-.content-block
-    display: flex
-    align-items: center
-    justify-content: center
 
 #active-section > div
   animation-name: slidein
