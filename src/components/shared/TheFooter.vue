@@ -39,13 +39,6 @@ export default {
 </script>
 
 <style lang="sass">
-// .carousel-caption > p
-//   border-radius: 25px
-//   border: 1px #072d73 solid
-//   background-color: rgba(207,214,227,.8)
-//   color: #050505
-//   font-size: x-large
-
 @media only screen and (max-width: 991px)
   .carousel-caption > p
     font-size: medium

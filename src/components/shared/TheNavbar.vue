@@ -1,7 +1,5 @@
 <template>
   <b-navbar toggleable="lg" sticky>
-    <b-navbar-brand href="#">Home</b-navbar-brand>
-
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
@@ -75,10 +73,7 @@ export default {
 .navbar
   background-color: $font-color-primary
   width: 100%
-
 .nav-link
-  color: white !important
-.navbar-brand
   color: white !important
 .navbar-toggler
   background-color: white !important

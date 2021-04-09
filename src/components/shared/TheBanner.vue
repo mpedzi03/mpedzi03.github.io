@@ -4,13 +4,3 @@
     <img src="@/assets/bg/HomeBanner_large2.jpeg" alt="banner image!" width="100%">
   </picture>
 </template>
-
-<script>
-
-export default {
-  name: 'TheHeader'
-}
-</script>
-
-<style lang="sass">
-</style>
